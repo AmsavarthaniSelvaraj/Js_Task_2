@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Task_2 - Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body style="background-color: rgb(147, 97, 228);">
+    
+    <div class="container">
+
+<div class="wholeDiv mx-auto py-2 mt-5" style=" border: 2px solid black; height: auto; width: 25%;">
+
+    <div class="text-center">
+        <input id="input" class="button text py-3 px-5" type="text" name="textarea">
+    </div>
+
+<div class=" ms-3 pt-2 mx-auto">
+
+<button type="text" onclick="clearDisplay()" class="ms-2 btn  btn-lg py-3 px-4 rounded-0 border-1 border-2 border-black border-top-0 border-start-0 text-center ">C</button>
+
+<button type="text" onclick="display('<')" class="ms-2 btn rounded-0 py-3 px-4 border  border-2 border-black border-top-0 border-start-0 btn-lg text-center"><</button>
+
+<button type="text" onclick="display('/')" class="ms-2 btn btn-lg py-3 px-4 rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center">/</button>
+
+<button type="text" value="*" onclick="display('*')" class="ms-2 py-3 px-4 btn btn-lg rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center">*</button>
+
+</div>
+
+
+<div class=" ms-3 pt-2 mx-auto">
+
+    <button type="text" onclick="display('7')" class="ms-2 btn  btn-lg py-3 px-4 rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center ">7</button>
+    
+    <button type="text" onclick="display('8')" class="ms-2 btn rounded-0 py-3 px-4 border  border-2 border-black border-top-0 border-start-0 btn-lg text-center">8</button>
+    
+    <button type="text" onclick="display('9')" class="ms-2 btn btn-lg py-3 px-4 rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center">9</button>
+    
+    <button type="text" value="*" onclick="display('-')" class="ms-2 py-3 px-4 btn btn-lg rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center">-</button>
+    
+    </div>
+
+    <div class=" ms-3 pt-2 mx-auto">
+
+        <button type="text" onclick="display('4')" class="ms-2 btn  btn-lg py-3 px-4 rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center ">4</button>
+        
+        <button type="text"onclick="display('5')" class="ms-2 btn rounded-0 py-3 px-4 border  border-2 border-black border-top-0 border-start-0 btn-lg text-center">5</button>
+        
+        <button type="text" onclick="display('6')" class="ms-2 btn btn-lg py-3 px-4 rounded-0 border  border-2 border-black border-top-0 border-start-0  text-center">6</button>
+        
+        <button type="text" value="*" onclick="display('+')" class="ms-2 py-3 px-4 btn btn-lg rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center">+</button>
+        
+        </div>
+
+        <div class="equal ms-3 pt-2 mx-auto">
+
+            <button type="text" onclick="display('1')" class="ms-2 btn  btn-lg py-3 px-4 rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center ">1</button>
+            
+            <button type="text" onclick="display('2')" class="ms-2 btn rounded-0 py-3 px-4 border  border-2 border-black border-top-0 border-start-0 btn-lg text-center">2</button>
+            
+            <button type="text" onclick="display('3')" class="ms-2 btn btn-lg py-3 px-4 rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center">3</button>
+            
+<span>
+            <button type="text" value="*" onclick="calculate()" class="ms-2 py-3 px-4 btn btn-lg rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center equal-btn">=</button>
+            <!-- <button type="button" class="btn btn-lg custom-btn">=</button> -->
+</span>
+            </div>
+            <div class="zero ms-3 pt-2 mx-auto">
+
+                <button type="text" onclick="display('0')" style="width: 134px;" class="me-2 ms-2 btn btn-lg py-3 rounded-0 border  border-2 border-black border-top-0 border-start-0 text-center ">0</button>
+                
+                <button type="text" onclick="display('.')" class=" ms-0 btn rounded-0 py-3 px-4 border  border-2 border-black border-top-0 border-start-0 btn-lg text-center">.</button>
+                
+
+                </div>
+
+</div>
+
+
+
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
